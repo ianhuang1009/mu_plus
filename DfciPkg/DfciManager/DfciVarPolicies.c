@@ -24,9 +24,9 @@ InitializeAndSetPolicyForAllDfciVariables (
 {
   UINTN                           i;
   EFI_STATUS                      Status;
-  EDKII_VARIABLE_POLICY_PROTOCOL  *VariablePolicy = NULL;
+  VARIABLE_POLICY_PROTOCOL  *VariablePolicy = NULL;
 
-  Status = gBS->LocateProtocol (&gEdkiiVariablePolicyProtocolGuid, NULL, (VOID **)&VariablePolicy);
+  Status = gBS->LocateProtocol (&gVariablePolicyProtocolGuid, NULL, (VOID **)&VariablePolicy);
   if (EFI_ERROR (Status)) {
     DEBUG ((DEBUG_ERROR, "%a %a: - Locating Variable Policy failed - Code=%r\n", _DBGMSGID_, __FUNCTION__, Status));
     goto Done;

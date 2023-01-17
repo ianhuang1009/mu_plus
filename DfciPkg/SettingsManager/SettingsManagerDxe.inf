@@ -38,6 +38,7 @@
   DfciPkg/DfciPkg.dec
   MsCorePkg/MsCorePkg.dec
   XmlSupportPkg/XmlSupportPkg.dec
+  QcomPkg/QcomPkg.dec
 
 [LibraryClasses]
   UefiDriverEntryPoint
@@ -74,4 +75,4 @@
 [Depex]
    gEfiVariableWriteArchProtocolGuid
    AND gEfiVariableArchProtocolGuid
-   AND gEdkiiVariablePolicyProtocolGuid
+   AND gVariablePolicyProtocolGuid

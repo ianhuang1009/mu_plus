@@ -43,6 +43,7 @@
   XmlSupportPkg/XmlSupportPkg.dec
   DfciPkg/DfciPkg.dec
   ZeroTouchPkg/ZeroTouchPkg.dec
+  QcomPkg/QcomPkg.dec
 
 [LibraryClasses]
   UefiDriverEntryPoint
@@ -83,7 +84,7 @@
 [Depex]
    gEfiVariableWriteArchProtocolGuid
    AND gEfiVariableArchProtocolGuid
-   AND gEdkiiVariablePolicyProtocolGuid
+   AND gVariablePolicyProtocolGuid
    AND gDfciSettingPermissionsProtocolGuid
    AND gMuPKCS7ProtocolGuid
    AND gEfiRngProtocolGuid
